@@ -1,0 +1,23 @@
+spring:
+  jpa:
+
+    database: sql_server
+    show-sql: true
+    hibernate:
+      dialect: org.hibernate.dialect.MyS
+      ddl-auto: create-drop
+#  datasource:
+#    platform: postgres
+#    url: jdbc:postgresql://localhost:5432/mydb
+#    username: postgres
+#    password: toor
+#    driverClassName: org.postgresql.Driver
+#  flyway:
+#    baselineOnMigrate: true
+#    locations: filesystem:db/migration
+
+datasource:
+  url: jdbc:sqlserver://localhost;databaseName=Alteryx
+  username: sa
+  password: 123456
+  driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
